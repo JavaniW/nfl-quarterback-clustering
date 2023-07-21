@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c32363c3-0340-4eae-b671-e4074429e8a6" name="Changes" comment="slight changes">
-      <change afterPath="$PROJECT_DIR$/dataset/quarterback_stats2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/quarterback_stats.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/quarterback_stats.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/kmeans.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/clusters.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/clusters.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/labels" beforeDir="false" afterPath="$PROJECT_DIR$/output/labels" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/clusters_avg_win_percentages.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/labels.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/labels.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/swarm-plots.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/swarm-plots.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,20 +43,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/javani/Projects/nfl-quarterback-clustering/dataset",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/javani/Projects/nfl-quarterback-clustering/dataset&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dataset" />
@@ -111,7 +109,8 @@
       <workItem from="1689910537487" duration="4000" />
       <workItem from="1689910560286" duration="2087000" />
       <workItem from="1689912702537" duration="78000" />
-      <workItem from="1689913005191" duration="2427000" />
+      <workItem from="1689913005191" duration="3268000" />
+      <workItem from="1689963629565" duration="1639000" />
     </task>
     <servers />
   </component>
@@ -146,9 +145,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="slight changes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/nfl_quarterback_clustering$kmeans.coverage" NAME="kmeans Coverage Results" MODIFIED="1689914826825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nfl_quarterback_clustering$kmeans.coverage" NAME="kmeans Coverage Results" MODIFIED="1689964643526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/honors_contract$extra3.coverage" NAME="extra3 Coverage Results" MODIFIED="1689910004006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/nfl_quarterback_clustering$extra.coverage" NAME="extra Coverage Results" MODIFIED="1689915426778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nfl_quarterback_clustering$extra.coverage" NAME="extra Coverage Results" MODIFIED="1689915561570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/honors_contract$nfl_stats.coverage" NAME="nfl_stats Coverage Results" MODIFIED="1689285477501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/honors_contract$Doctests_in_validation.coverage" NAME="Doctests in validation Coverage Results" MODIFIED="1689388463312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/sklearn/utils" />
     <SUITE FILE_PATH="coverage/honors_contract$kmeans.coverage" NAME="kmeans Coverage Results" MODIFIED="1689910167206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

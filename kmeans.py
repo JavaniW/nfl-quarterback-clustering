@@ -33,16 +33,9 @@ quarterbacks = quarterback_stats[['name', 'win_percentage']]
 quarterbacks = pd.concat((quarterbacks,labels),axis=1)
 quarterbacks = quarterbacks.rename({0:'Cluster'},axis=1)
 sorted_quarterbacks = quarterbacks.sort_values(['Cluster'])
-averages = sorted_quarterbacks.groupby("Cluster")["win_percentage"].mean()
-print(averages.to_string())
-print(type(averages))
-
-# def avg_perc(x):
-#     return (x["win_percentage"] / 100)
-
-with open("output/clusters_avg_win_percentages.txt", "w") as f:
-    for index, row in averages.items():
-        f.write(f"Cluster {index} Average Win Percentage: {round(row * 100, 2)}%\n")
+averages = sorted_quarterbacks[["Cluster", "win_percentage"]].groupby("Cluster", as_index=False).mean().rename(columns = {"win_percentage": "Average Win Percentage"})
+averages["Average Win Percentage"] = averages["Average Win Percentage"].apply(lambda x: round((x * 100), 2))
+averages.to_csv("output/clusters_avg_win_percentage.csv", index=False)
 
 pd.set_option('display.max_rows', 1000)
 sorted_quarterbacks.to_csv("output/labels.csv", index=False)

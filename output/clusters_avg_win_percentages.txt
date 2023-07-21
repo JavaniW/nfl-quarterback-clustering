@@ -1,4 +1,0 @@
-Cluster 0 Average Win Percentage: 34.07%
-Cluster 1 Average Win Percentage: 46.08%
-Cluster 2 Average Win Percentage: 55.27%
-Cluster 3 Average Win Percentage: 45.23%
